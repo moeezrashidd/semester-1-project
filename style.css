@@ -1,0 +1,477 @@
+:root {
+    --main-color: #01A49E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+/* navbar styling */
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+nav .logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+nav .logo img:hover {
+    border: 1px solid;
+}
+
+nav .logo .logo-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#logo-1st-txt {
+    color: rgb(115, 114, 114);
+    font-size: 12px;
+}
+
+#logo-2nd-txt {
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.option {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.option:hover {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+/* search banner styling */
+.search-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    margin-top: 65px;
+}
+
+.search-content {
+    background-color: white;
+    width: 35%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.search-content p {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-content p:hover {
+    color: var(--main-color);
+}
+
+.search-content input {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 60%;
+}
+
+.search-banner-txt {
+    color: white;
+    font-size: 14px;
+}
+
+/* hero section styling */
+
+/* categories */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0px 10px;
+    gap: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    width: 20%;
+    height: 53vh;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.categories h2 {
+    color: rgb(118, 118, 118);
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    border: 0.3px solid rgb(201, 201, 201);
+    padding: 5px 4px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.category:hover {
+    border: 0.3px solid var(--main-color);
+}
+
+.category i {
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.category #category-num {
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* slider */
+
+.slider {
+    width: 100%;
+    height: 53vh;
+
+}
+
+.slide1{
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/slider/slider\ 1.png');
+    background-size: cover;      
+    background-position: center; 
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px;
+    gap: 40px;
+}
+
+.slide1 h1{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.slide-text{
+    color: white;
+    background-color: transparent;
+    border: 2px solid #9A9A9A;
+    padding: 10px 25px;
+    border-radius: 50px;
+    padding-right: 0;
+}
+
+.slide-text input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.slide-text input::placeholder{
+    color:#cfcfcf;
+}
+.slide-text span{
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+    /* <!-- styling banner for brands and categories --> */
+
+.brand-category-Contanier{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}    
+
+.brands , .top-categories{
+    background-color: white;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+.brands-text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px 0px;
+    font-size: 14px ;
+    font-weight: 700;
+}
+#brands-view-all{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(76, 76, 76);
+}
+
+.pics{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.pics img{
+   
+cursor: pointer;
+margin-top: 10px;
+}
+
+.top-products{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+    
+}
+.product img{
+width: 100px;
+}
+.product span{
+    font: 14px;
+    font-weight: 600;
+}
+
+/* styling for first banner */
+
+.first-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    
+}
+
+.product-with-deal{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    position: relative;
+}
+
+#headline-deal-porduct{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.product-with-deal .product-deal{
+width: 100%;
+ display: flex;
+ background-color: white;
+}
+
+.product-with-deal .product-deal img{
+    width: 45%;
+    margin-top: 20px;
+}
+.product-with-deal .product-deal .product-text{
+    width: 45%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.product-with-deal .product-deal .product-text #title {
+    font-weight: 700;
+}
+.product-with-deal .product-deal .product-text #price{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--main-color);
+}
+.product-with-deal .product-deal .product-text ul{
+    color: rgb(66, 66, 66);
+}
+.gifts-div span{
+    color: var(--main-color);
+    background-color: #ece7e7;
+    padding: 5px 10px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px; 
+
+}
+
+.timer > span{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.timer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-color);
+    font-weight: 700;
+    background-color: #d5d5d5;
+    padding: 4px 10px;
+}
+
+.timer p span{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+
+#quan-sold{
+    font: 12px;
+}
+#quan-sold span{
+    font-size: 14px ;
+    font-weight: 700;
+}
+
+.first-banner .posters{
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.first-banner .posters .poster img{
+    width: 100%;
+    height: 33.33%;
+}
+.first-banner .poster img:hover{
+    box-shadow: 4px 4px 15px 1px black;
+}
+
+.pre-order-container{
+    width: 100%;
+    height: 100px;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    margin: 10px 0px ;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pre-order-container .pic{
+    background-color: #5F81A2;
+    height: 100%;
+    border-radius: 100px;
+}
+.pre-order-container img{
+    height: 100%;
+}
+.pre-order-container .txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pre-order-container .txt .lgtext{
+    font-size: 20px;
+}
+.pre-order-container .txt .smtext{
+    font-size: 12px;
+}
+
+.pre-order-container span{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.pre-order-container span:hover{
+     padding: 6px 17px;
+}
