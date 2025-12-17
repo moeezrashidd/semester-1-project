@@ -61,7 +61,6 @@ nav .logo .logo-text {
 }
 
 #logo-2nd-txt {
-
     font-size: 14px;
     font-weight: 700;
 }
@@ -71,6 +70,24 @@ nav .logo .logo-text {
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+
+.sign-in {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sign-in .bars {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: white;
+    font: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .option {
@@ -228,6 +245,7 @@ nav .logo .logo-text {
     padding: 10px 25px;
     border-radius: 50px;
     padding-right: 0;
+    
 }
 
 .slide-text input {
@@ -245,6 +263,7 @@ nav .logo .logo-text {
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
+    height: 100%;
 }
 
 /* <!-- styling banner for brands and categories --> */
@@ -297,7 +316,6 @@ nav .logo .logo-text {
 }
 
 .pics img {
-
     cursor: pointer;
     margin-top: 10px;
 }
@@ -318,7 +336,7 @@ nav .logo .logo-text {
 }
 
 .product img {
-    width: 100px;
+    width: 100%;
 }
 
 .product span {
@@ -335,7 +353,6 @@ nav .logo .logo-text {
     align-items: center;
     gap: 10px;
     margin-top: 15px;
-
 }
 
 .product-with-deal {
@@ -343,6 +360,7 @@ nav .logo .logo-text {
     flex-direction: column;
     width: 70%;
     position: relative;
+    padding: 0px 5px;
 }
 
 #headline-deal-porduct {
@@ -577,7 +595,7 @@ nav .logo .logo-text {
 
 .product-card-text #title {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 0px 5px;
 }
 
@@ -595,7 +613,6 @@ nav .logo .logo-text {
 
 .product-card-text .shipingOpt {
     display: flex;
-
     align-items: center;
     gap: 5px;
     color: var(--main-color);
@@ -654,7 +671,7 @@ nav .logo .logo-text {
 
 /* video banner syliing */
 
-.videoBanner{
+.videoBanner {
     width: 85%;
     display: flex;
     justify-content: center;
@@ -662,7 +679,7 @@ nav .logo .logo-text {
     margin-top: 10px;
 }
 
-.videoBanner video{
+.videoBanner video {
     width: 100%;
 }
 
@@ -676,6 +693,7 @@ nav .logo .logo-text {
     align-items: center;
     gap: 10px;
     margin-top: 10px;
+
 }
 
 .category-products-contianer .products-wrappers {
@@ -730,7 +748,7 @@ nav .logo .logo-text {
 
 .category-products-contianer .sub-products-wrapper .sub-product img {
     width: 70%;
-    
+
 }
 
 .category-products-contianer .sub-products-wrapper .sub-product #title {
@@ -756,7 +774,7 @@ nav .logo .logo-text {
 
 .banner-rapper .banner {
     width: 49%;
-    height: 120%;
+    height: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -858,7 +876,6 @@ footer {
 
 .footer-container {
     width: 80%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -868,7 +885,6 @@ footer {
 .footer-links-contianer {
     display: flex;
     justify-content: center;
-
     gap: 25px;
     width: 100%;
 }
@@ -878,7 +894,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 
 .footer-links1 {
@@ -953,24 +968,481 @@ footer {
     align-items: center;
     padding-top: 30px;
 }
-.rights-contanier .rights{
+
+.rights-contanier .rights {
     font-size: 12px;
     color: #3a3a3a;
 }
-.rights-contanier .payments{
+
+.rights-contanier .payments {
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-.rights-contanier a{
+
+.rights-contanier a {
     font-size: 16px;
-   font-weight: 700;
-   text-decoration: none;
-   color: rgb(207, 55, 0);
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(207, 55, 0);
 }
-.rights-contanier a:hover{
- 
-   color: black;
+
+.rights-contanier a:hover {
+
+    color: black;
+}
+
+/* +++++++++++++++++ Responsiveness styling ++++++++++++++++++ */
+@media (max-width :1010px) {
+    .search-content p {
+        font-size: 12px;
+    }
+
+    .hero {
+        gap: 10px;
+    }
+
+    .categories {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .pics {
+        gap: 5px;
+    }
+
+    .pics img {
+        width: 70px;
+    }
+
+    .product {
+        gap: 15px;
+    }
+
+    .product-with-deal .product-deal .product-text {
+        gap: 10px;
+        margin-top: 0px;
+    }
+
+    .product-with-deal .product-deal .product-text #price {
+        font-size: 16px;
+    }
+
+    .product-with-deal .product-deal .product-text ul {
+        font-size: 14px;
+    }
+
+    .gifts-div span {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+
+    .timer>span {
+        font-size: 12px;
+    }
+
+    .timer p {
+        padding: 2px 5px;
+    }
+
+    .timer p span {
+        font-size: 10px;
+    }
+
+    #quan-sold {
+        font: 10px;
+    }
+
+    #quan-sold span {
+        font-size: 12px;
+    }
+
+    .product-with-deal .product-deal img {
+        width: 50%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .first-banner .posters {
+        width: 19%;
+    }
+
+    .product-card {
+        width: 24%;
+    }
+
+    .banner-rapper .banner .banner-text {
+        gap: 3px;
+    }
+
+    .banner-rapper .banner .banner-text #title {
+        font-size: 16px;
+    }
+
+    .banner-rapper .banner .banner-text #desc {
+        font-size: 10px;
+    }
+
+    .banner-rapper .banner .banner-text img {
+        width: 80%;
+    }
+
+    .banner-rapper .banner .banner-text #shop-now {
+        font-size: 12px;
+    }
+
+    .banner-rapper .banner .inp-num {
+        padding: 3px 10px;
+    }
+
+    .footer-links-contianer {
+        gap: 20px;
+    }
+
+    .footer-links #title {
+        font-size: 14px;
+    }
+
+    .footer-links p {
+        font-size: 12px;
+    }
+
+    .footer-links p span {
+        font-size: 16px;
+    }
+
+    .footer-links #address,
+    #contact {
+        font-size: 10px;
+    }
+
+    .footer-links .links .link {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-links .links .link i {
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .footer-links ul {
+        font-size: 12px;
+    }
+
+    .rights-contanier a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width :940px) {
+    .product-card {
+        width: 24%;
+    }
+
+    .product-card-text #title {
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .initial-product-container .product-container {
+        gap: 5px;
+        padding-left: 0px;
+    }
+
+    .product-card-text .shipingOpt {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #Brand-product-text {
+        font-size: 12px;
+    }
+
+    .pics img {
+        width: 60px;
+    }
+}
+
+@media (max-width :850px) {
+    .categories h2 {
+        font-size: 16px;
+    }
+
+    .category {
+        padding: 2px;
+        font-size: 12px;
+    }
+
+    .categories {
+        gap: 10px;
+    }
+
+    .search-content input {
+        padding-left: 5px;
+        width: 50%;
+    }
+
+    .product {
+        width: 20%;
+    }
+
+    .slide1 {
+    align-items: center;
+    justify-content: center;
+}
+.slide-text {
+  width: 90%;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.slide-text input {
+    width: 60%;
+}
+}
+
+@media (max-width :790px) {
+    .categories {
+        display: none;
+    }
+
+    .product-with-deal {
+
+        width: 75%;
+    }
+
+    .first-banner .posters {
+        width: 25%;
+    }
+
+    .initial-product-container {
+        width: 99%;
+    }
+
+    .videoBanner {
+        width: 100%;
+    }
+
+    .category-products-contianer {
+        width: 100%;
+    }
+
+    .banner-rapper {
+        width: 100%;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    .footer-links-contianer {
+        width: 100%;
+    }
+
+    .brands,
+    .top-categories {
+        width: 50%;
+    }
+
+    .pics img {
+        width: 50px;
+    }
+
+    nav .logo .logo-text {
+        display: none;
+    }
+
+    nav .logo .main-logo {
+        display: flex;
+    }
+
+    .search-banner-txt {
+        display: none;
+    }
+
+    .search-content {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .pre-order-container {
+        display: none;
+    }
+
+
+
+
+    .footer-links-contianer {
+        gap: 10px;
+    }
+
+    .footer-links #title {
+        font-size: 12px;
+    }
+
+    .footer-links p {
+        font-size: 10px;
+    }
+
+    .footer-links p span {
+        font-size: 12px;
+    }
+
+    .footer-links .links .link {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer-links .links .link i {
+        font-size: 14px;
+
+    }
+
+    .footer-links ul {
+        font-size: 10px;
+    }
+
+    .rights-contanier a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width :650px) {
+
+    .first-banner {
+        flex-direction: column;
+    }
+
+    .product-with-deal {
+        width: 100%;
+    }
+
+    .first-banner .posters {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .first-banner .posters .poster img {
+        height: 100%;
+    }
+
+    .rights-contanier .payments {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .rights-contanier .rights {
+        font-size: 10px;
+    }
+
+    .pics img {
+        width: 46px;
+    }
+
+}
+
+@media (max-width :590px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .slide1 h1 {
+        font-size: 30px;
+    }
+
+    .brand-category-Contanier {
+        flex-direction: column;
+    }
+
+    .brands,
+    .top-categories {
+        width: 100%;
+    }
+
+    .pics img {
+        width: 15%;
+    }
+
+    .product-container .products-banner {
+        width: 48%;
+    }
+
+    .initial-product-container .product-container {
+        gap: 20px;
+
+    }
+
+    .product-card {
+        width: 46%;
+
+    }
+
+    .product-container .products-banner {
+    width: 46%;
+}
+.category-products-contianer .products-wrappers {
+    width: 46%;
+    
+}
+
+    .category-products-contianer {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .banner-rapper {
+        flex-direction: column;
+        height: 250px;
+    }
+
+    .banner-rapper .banner {
+        width: 100%;
+        height: 50%;
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .sign-in .bars {
+        display: flex;
+    }
+    .product-with-deal .product-deal{
+        flex-direction: column;
+        
+    }
+    .product-with-deal .product-deal img {
+width: 100%;
+}
+.product-with-deal .product-deal .product-text {
+    width: 100%;
+    align-items: center;
+
+}
+}
+
+@media (max-width :450px) {
+.footer-links-contianer {
+    flex-direction: column;
+}
+
+
+.footer-links {
+    width: 100%;
+    gap: 0px;
+}
+.footer-links ul li {
+    padding: 2px;
+}
+.rights-contanier {
+   flex-direction: column;
+   gap: 10px;
+   padding-top: 5px;
+}
 }
