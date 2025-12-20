@@ -1,0 +1,32 @@
+[
+    {
+        "username": "moeez",
+        "password": "fnsf",
+        "role": "Seller",
+        "isAdmin": false,
+        "full_name": "dsdfsdfw",
+        "email": "sfhsdfhwrfi",
+        "phone": "sfhwfhwrof",
+        "address": "fwufhwof"
+    },
+    {
+        "username": "gwrifw",
+        "password": "wfhwfw",
+        "role": "Buyer",
+        "isAdmin": false,
+        "full_name": "Moeez Rashid",
+        "email": "moeezrashidd@gmail.com",
+        "phone": "03424364913",
+        "address": "lahore"
+    },
+    {
+        "username": "2",
+        "password": "wfhwfw",
+        "role": "Buyer",
+        "isAdmin": false,
+        "full_name": "wfhwf",
+        "email": "werwf",
+        "phone": "sdfwifh",
+        "address": ""
+    }
+]

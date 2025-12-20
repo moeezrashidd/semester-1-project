@@ -245,7 +245,7 @@ nav .logo .logo-text {
     padding: 10px 25px;
     border-radius: 50px;
     padding-right: 0;
-    
+
 }
 
 .slide-text input {
@@ -1190,20 +1190,22 @@ footer {
     }
 
     .slide1 {
-    align-items: center;
-    justify-content: center;
-}
-.slide-text {
-  width: 90%;
-    padding: 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.slide-text input {
-    width: 60%;
-}
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slide-text {
+        width: 90%;
+        padding: 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .slide-text input {
+        width: 60%;
+    }
 }
 
 @media (max-width :790px) {
@@ -1384,12 +1386,13 @@ footer {
     }
 
     .product-container .products-banner {
-    width: 46%;
-}
-.category-products-contianer .products-wrappers {
-    width: 46%;
-    
-}
+        width: 46%;
+    }
+
+    .category-products-contianer .products-wrappers {
+        width: 46%;
+
+    }
 
     .category-products-contianer {
         justify-content: flex-start;
@@ -1399,6 +1402,8 @@ footer {
     .banner-rapper {
         flex-direction: column;
         height: 250px;
+        gap: 10px;
+          
     }
 
     .banner-rapper .banner {
@@ -1413,36 +1418,61 @@ footer {
     .sign-in .bars {
         display: flex;
     }
-    .product-with-deal .product-deal{
-        flex-direction: column;
-        
-    }
-    .product-with-deal .product-deal img {
-width: 100%;
-}
-.product-with-deal .product-deal .product-text {
-    width: 100%;
-    align-items: center;
 
-}
+    .product-with-deal .product-deal {
+        flex-direction: column;
+
+    }
+
+    .product-with-deal .product-deal img {
+        width: 100%;
+    }
+
+    .product-with-deal .product-deal .product-text {
+        width: 100%;
+        align-items: center;
+
+    }
 }
 
 @media (max-width :450px) {
-.footer-links-contianer {
-    flex-direction: column;
-}
+    .footer-links-contianer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
 
+    .slide1 {
+        align-items: center;
+        padding-left: 0px;
+    }
 
-.footer-links {
-    width: 100%;
-    gap: 0px;
-}
-.footer-links ul li {
-    padding: 2px;
-}
-.rights-contanier {
-   flex-direction: column;
-   gap: 10px;
-   padding-top: 5px;
-}
+    .footer-links {
+        width: 45%;
+       
+    }
+
+    .footer-links ul li {
+        padding: 2px;
+    }
+
+    .rights-contanier {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 5px;
+    }
+
+    #wrappers-text {
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .search-content {
+        width: 98%;
+    }
+
+    .product-container-text {
+        padding: 5px;
+    }
+  
 }
