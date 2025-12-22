@@ -1,19 +1,64 @@
 import json
 import os
+userfile = "user.json"
+productfile = "product.json"
 def initializeFile():
-    if not os.path.exists("user.json"):
-        with open("user.json", "w") as file:
+    if not os.path.exists(userfile):
+        with open(userfile, "w") as file:
+            json.dump([], file)
+    if not os.path.exists(productfile):
+        with open(productfile, "w") as file:
             json.dump([], file)
        
 
 def load_users():
-    with open("user.json", "r") as file:
+    with open(userfile, "r") as file:
+        return json.load(file)
+
+def load_products():
+    with open(productfile, "r") as file:
         return json.load(file)
 
 
 def save_users(users):
-    with open("user.json", "w") as file:
+    with open(userfile, "w") as file:
         json.dump(users, file, indent=4)
+
+
+def save_product(products):
+    with open(productfile, "w") as file:
+        json.dump(products, file, indent=4)
+
+def showAllProducts():
+    print("Showing all products...")
+
+def showAllUsers():
+    print("Showing all users...")
+
+def deleteProduct(*args):
+    print("Deleting product...")
+
+def deleteUser(username):
+    print(f"Deleting user {username}...")
+
+def Logout(user):
+    print(f"{user['name']} logged out.")
+
+def showAllSellerProducts():
+    print("Showing seller products...")
+
+def addProduct(user):
+    print("Adding product...")
+
+def addToCart(pid, user):
+    print("Added product to cart.")
+
+def removeFromCart(pid, user):
+    print("Removed product from cart.")
+
+def showCart(user):
+    print("Showing cart...")
+
 
 def adminDashboard(user):
     print(f"Welcome {user['name']} in MH-Mall as a {user['role']} ......... Enter!!!!") 
@@ -97,15 +142,16 @@ def customerDashboard(user):
         print("invalid Input")
 
 def updateProfile(user):    
-   pass
+   print(user)
 
 def signIn():
-    email = input("Enter your email !!!!\t")
-    password = input("Enter your password !!!!\t")
+    email = input("Enter your email !!!!\t").strip()
+    password = input("Enter your password !!!!\t").strip()
 
     users = load_users()
     
     for user in users :
+        print(user)
         if user["email"] == email and user["password"] == password :
             print("Login successfully")
             if user["role"] == "admin" :
@@ -114,9 +160,9 @@ def signIn():
                 sellerDashboard(user)
             else :
                 customerDashboard(user)        
-        else:
-            print("Login faild. Please try again")
             return
+        
+    print("Login faild. Please try again")
     
 
 
@@ -155,6 +201,7 @@ def signUp():
             return
         elif user["email"] == email:
             print("email already exists.")
+            return
         
     users.append(new_user)
 

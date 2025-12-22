@@ -1,0 +1,14 @@
+[
+    {
+        "name": "m",
+        "email": "m",
+        "username": "m",
+        "password": "m",
+        "age": 23,
+        "gender": "m",
+        "address": "m",
+        "phone": "m",
+        "role": "seller",
+        "cart": []
+    }
+]
