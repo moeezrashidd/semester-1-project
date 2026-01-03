@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="shortcut icon" href="../../assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --main-color: #01A49E;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: rgb(241, 241, 241);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .auth-container {
+      width: 400px;
+      background-color: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .auth-container h2 {
+      text-align: center;
+      color: var(--main-color);
+      margin-bottom: 30px;
+    }
+
+    .auth-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .auth-form label {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .auth-form input {
+      padding: 12px 15px;
+      border-radius: 10px;
+      border: 1px solid rgb(201, 201, 201);
+      outline: none;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .auth-form input:focus {
+      border-color: var(--main-color);
+    }
+
+    .auth-form button {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background-color: var(--main-color);
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .auth-form button:hover {
+      background-color: #01817f;
+    }
+
+    .auth-footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .auth-footer a {
+      color: var(--main-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+
+  <div class="auth-container">
+    <h2>Sign Up</h2>
+    <form class="auth-form">
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+      </div>
+      <button type="button" onclick="signUp()">Sign Up</button>
+    </form>
+    <div class="auth-footer">
+      Already have an account? <a href="../signIn/signIn.html">Sign In</a>
+    </div>
+  </div>
+
+</body>
+<script>
+  function signUp() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let confirm_password = document.getElementById("confirm-password").value;
+
+    if (password !== confirm_password) {
+      alert("Passwords do not match!");
+      return;
+    }
+
+    const newUser = { name, email, password };
+
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    let emailExists = users.some(user => user.email === email);
+    if (emailExists) {
+      alert("Email already registered!");
+      return;
+    }
+
+    users.push(newUser);
+
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert("User sign-up is successful!");
+    window.location.href = "../signIn/signIn.html";
+
+  }
+
+
+</script>
+
+</html>

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "productNumber": 201,
+    "brandName": "SoundMax",
+    "title": "Wireless Bluetooth Over-Ear Headphones with Noise Isolation and Mic",
+    "description": "Comfortable over-ear Bluetooth headphones with deep bass, noise isolation, and a built-in microphone for calls and music.",
+    "sellingCost": 4500,
+    "originalCost": 6000,
+    "photo": "./assets/products/headphone.jpeg"
+  },
+  {
+    "id": 2,
+    "productNumber": 202,
+    "brandName": "UrbanWear",
+    "title": "Men’s Casual Slim-Fit Cotton Shirt for Daily and Office Wear",
+    "description": "Soft cotton slim-fit shirt designed for comfort and style, suitable for both office and casual daily wear.",
+    "sellingCost": 2200,
+    "originalCost": 3000,
+    "photo": "./assets/products/shirt.jpeg"
+  },
+  {
+    "id": 3,
+    "productNumber": 203,
+    "brandName": "HerbalGlow",
+    "title": "Herbal Facial Cleanser with Neem and Aloe Vera for All Skin Types",
+    "description": "Gentle herbal face wash enriched with neem and aloe vera to cleanse skin and maintain natural freshness.",
+    "sellingCost": 850,
+    "originalCost": 1200,
+    "photo": "./assets/products/face wash.jpeg"
+  },
+  {
+    "id": 4,
+    "productNumber": 204,
+    "brandName": "VisionTech",
+    "title": "43-Inch Smart LED Television with Full HD Display and Streaming Apps",
+    "description": "Full HD smart LED TV with vibrant picture quality and built-in streaming apps for entertainment at home.",
+    "sellingCost": 65000,
+    "originalCost": 72000,
+    "photo": "./assets/products/led.jpeg"
+  },
+  {
+    "id": 5,
+    "productNumber": 205,
+    "brandName": "Elegance",
+    "title": "Women’s Premium Leather Handbag with Spacious Compartments",
+    "description": "Stylish premium leather handbag featuring multiple compartments for organized and everyday use.",
+    "sellingCost": 3800,
+    "originalCost": 5000,
+    "photo": "./assets/products/women purse.jpeg"
+  },
+  {
+    "id": 6,
+    "productNumber": 206,
+    "brandName": "SmartOne",
+    "title": "Android Smartphone with 128GB Storage, Dual Camera, and Fast Charging",
+    "description": "Powerful Android smartphone with large storage, dual-camera setup, and fast charging support.",
+    "sellingCost": 52000,
+    "originalCost": 58000,
+    "photo": "./assets/products/mobile.jpeg"
+  },
+  {
+    "id": 7,
+    "productNumber": 207,
+    "brandName": "AromaX",
+    "title": "Long-Lasting Men’s Perfume with Woody Fragrance (100ml Bottle)",
+    "description": "Premium men’s perfume with a long-lasting woody fragrance, ideal for daily and special occasions.",
+    "sellingCost": 3200,
+    "originalCost": 4500,
+    "photo": "./assets/products/perfume.jpeg"
+  },
+  {
+    "id": 8,
+    "productNumber": 208,
+    "brandName": "RunFlex",
+    "title": "Lightweight Running Sports Shoes with Cushioned Sole for Comfort",
+    "description": "Durable and lightweight sports shoes with cushioned soles for enhanced comfort during running and workouts.",
+    "sellingCost": 5600,
+    "originalCost": 7000,
+    "photo": "./assets/products/sneaker.jpeg"
+  },
+  {
+    "id": 9,
+    "productNumber": 209,
+    "brandName": "HomeEase",
+    "title": "Electric Kettle 1.7 Liter with Auto Shut-Off and Stainless Steel Body",
+    "description": "Fast-boiling electric kettle with stainless steel body and auto shut-off for safe everyday use.",
+    "sellingCost": 2900,
+    "originalCost": 3600,
+    "photo": "./assets/products/kettle.jpeg"
+  },
+  {
+    "id": 10,
+    "productNumber": 210,
+    "brandName": "GlamUp",
+    "title": "Matte Finish Lipstick Makeup Set with Multiple Shades for Daily Use",
+    "description": "Makeup lipstick set featuring multiple matte shades that are smooth, long-lasting, and perfect for daily wear.",
+    "sellingCost": 1800,
+    "originalCost": 2500,
+    "photo": "./assets/products/lipstick.jpeg"
+  }
+]

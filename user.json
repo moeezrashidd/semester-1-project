@@ -1,0 +1,76 @@
+[
+    {
+        "name": "m",
+        "email": "m",
+        "username": "m",
+        "password": "m",
+        "age": 23,
+        "gender": "m",
+        "address": "m",
+        "phone": "m",
+        "role": "seller",
+        "cart": []
+    },
+    {
+        "name": "om",
+        "email": "om",
+        "username": "om",
+        "password": "om",
+        "age": 4,
+        "gender": "male",
+        "address": "dfgfklsgjd",
+        "phone": "234567890-",
+        "role": "seller",
+        "cart": []
+    },
+    {
+        "name": "ol",
+        "email": "ol",
+        "username": "ol",
+        "password": "ol",
+        "age": 87,
+        "gender": "male",
+        "address": "herrtrhre",
+        "phone": "yertyy",
+        "role": "seller",
+        "cart": []
+    },
+    {
+        "name": "s",
+        "email": "s",
+        "username": "s",
+        "password": "s",
+        "age": 2,
+        "gender": "s",
+        "address": "nakdkds",
+        "phone": "geree",
+        "role": "customer",
+        "cart": [
+          
+        ]
+    },
+    {
+        "name": "d",
+        "email": "d",
+        "username": "d",
+        "password": "d",
+        "age": 2,
+        "gender": "d",
+        "address": "d",
+        "phone": "d",
+        "role": "customer",
+        "cart": []
+    },
+    {
+        "name": "a",
+        "email": "a",
+        "username": "a",
+        "password": "a",
+        "age": 2,
+        "gender": "a",
+        "address": "a",
+        "phone": "a",
+        "role": "admin",
+        "cart": []
+    }
+]

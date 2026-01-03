@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart - Self-Contained</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+<body class="fade-in">
+
+  <nav>
+
+    <div class="logo">
+      <img src="../../assets/logo.png" alt="webpage logo">
+      <div class="logo-text main-logo">
+        <span id="logo-2nd-txt">MH</span>
+        <span id="logo-2nd-txt">MEGA MALL</span>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="../../index.html" id="logo-2nd-txt" class="option">HOME<i class="fa-solid fa-angle-down"></i></a>
+      <a href="#" id="logo-2nd-txt" class="option">PAGES<i class="fa-solid fa-angle-down"></i></a>
+      <a href="#" id="logo-2nd-txt" class="option">PRODUCTS<i class="fa-solid fa-angle-down"></i></a>
+      <a href="#" id="logo-2nd-txt" class="option">CONTACT</a>
+    </div>
+    <div class="div sign-in">
+
+
+      <div class="logo">
+        <a href="../signIn/signIn.html"><img src="../../assets/person.png" alt="webpage logo"></a>
+        <div class="logo-text">
+          <span id="logo-1st-txt">WELCOME</span>
+          <span id="logo-2nd-txt"><a href="../signIn/signIn.html">LOGIN</a> / <a
+              href="../signUp/signUp.html">REGISTER</a></span>
+        </div>
+      </div>
+
+
+      <div class="logo">
+        <a href="./cart.html">
+          <img src="../../assets/cart.png" alt="webpage logo">
+        </a>
+        <div class="logo-text">
+          <span id="logo-1st-txt"> <a href="./cart.html">CART</a></span>
+          <span id="logo-2nd-txt"><a href="./cart.html">PKR 12000</a></span>
+        </div>
+
+      </div>
+
+      <span class="bars" id="menu-btn"><i class="fa-solid fa-bars"></i></span>
+    </div>
+
+
+
+
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="../../index.html" class="option">HOME<i class="fa-solid fa-angle-down"></i></a>
+      <a href="#" class="option">PAGES<i class="fa-solid fa-angle-down"></i></a>
+      <a href="#" class="option">PRODUCTS<i class="fa-solid fa-angle-down"></i></a>
+      <a href="#" class="option">CONTACT</a>
+    </div>
+
+  </nav>
+
+  <div class="cart-container">
+    <h1>My Cart <span id="cart-count"></span></h1>
+
+    <div id="cart-items-container">
+
+    </div>
+
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">Rs. 0</span>
+      </div>
+      <div class="summary-row">
+        <span>Delivery Charges</span>
+        <span style="color: #059669;">Free</span>
+      </div>
+      <div class="summary-total">
+        <span>Total</span>
+        <span id="cart-total">Rs. 0</span>
+      </div>
+
+      <button class="checkout-btn" onclick="alert('Checkout functionality coming soon!')">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links-contianer">
+        <div class="footer-links footer-links1">
+          <span id="title">MH-Mega Mall #1 online mart</span>
+          <p>HOTLINE 24/7 <br> <span id="number">(025) 3686 25 16</span></p>
+          <span id="address">247 Thatcher Road St, Brooklyn ,Manhattan ,NY 10092</span>
+          <span id="contact">contach@MH-Mall.com</span>
+
+          <div class="links">
+            <div class="link"><i class="fa-brands fa-facebook"></i></div>
+            <div class="link"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class="link"><i class="fa-brands fa-instagram"></i></div>
+            <div class="link"><i class="fa-brands fa-youtube"></i></div>
+            <div class="link"><i class="fa-brands fa-pinterest"></i></div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <span id="title">TOP CATEGORIES</span>
+          <ul>
+            <li>Laptops</li>
+            <li>PC & Computers</li>
+            <li>Cell Phones</li>
+            <li>Gaming & VR</li>
+            <li>Networks</li>
+            <li>Camera</li>
+            <li>Sound</li>
+            <li>Office</li>
+            <li>Tablets</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <span id="title">COMPANY</span>
+          <ul>
+            <li>About MH-Mall</li>
+            <li>Contact</li>
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Site Map</li>
+            <li>Store Locations</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <span id="title">HELP CENTER</span>
+          <ul>
+            <li>Custmoer Service</li>
+            <li>Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Track Order</li>
+            <li>FAQs</li>
+            <li>My Account</li>
+            <li>Product Support</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <span id="title">PARTNER</span>
+          <ul>
+            <li>Become Seller</li>
+            <li>Affiliate</li>
+            <li>Advertise</li>
+            <li>Partnership</li>
+          </ul>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="rights-contanier">
+
+        <div class="rights"><i class="fa-brands fa-facebook"></i> 2025 <strong>MH-Mega Mall</strong> all rights
+          are conserved</div>
+
+        <div class="payments">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-paypal"></i>
+          <i class="fa-brands fa-stripe"></i>
+          <i class="fa-brands fa-google-pay"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+        </div>
+
+        <a href="https://moeez-rashid.vercel.app/">Developer's site</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
